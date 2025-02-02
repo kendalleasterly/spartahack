@@ -7,10 +7,10 @@ from flask_cors import CORS
 
 # Initialize Flask with __name__
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 
 # MongoDB connection setup
-client = MongoClient("mongodb+srv://gautham:nVXsNYur5nPIzpP1@main.1kg3i.mongodb.net/")
+client = MongoClient("mongodb+srv://kjeasterly31:yfuOCpUepwOwyCgc@main.1kg3i.mongodb.net/")
 db = client["barber-database"]
 collection = db["barbers"]
 sessions_collection = db["sessions"]
@@ -30,10 +30,10 @@ def test():
 @app.route("/get_barber", methods=["GET"])
 def get_barber():
     try:
-        barber_id = request.args.get("_id")
+        barber_id = request.args.get("id")
         barber_name = request.args.get("name")
         location = request.args.get("location")
-        hairstyle = request.args.get("hairstyle")
+        hairstyles = request.args.get("hairstyles")
         rating = request.args.get("rating")
         gender = request.args.get("gender")
         will_travel = request.args.get("will_travel")
@@ -47,9 +47,9 @@ def get_barber():
             query["name"] = barber_name
         if location:
             query["neighborhood"] = location
-        if hairstyle:
+        if hairstyles:
             query["hairstyles"] = {
-                "$regex": f".*{hairstyle}.*",
+                "$regex": f".*{hairstyles}.*",
                 "$options": "i"
             }
         if rating:
@@ -169,6 +169,17 @@ def get_barber_sessions():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.after_request
+def add_cors_headers(response):
+    """
+    Add CORS headers to the response to allow requests from the origin of the request.
+    """
+    origin = request.headers.get('Origin')
+    if origin:
+        response.headers['Access-Control-Allow-Origin'] = origin
+        response.headers['Access-Control-Allow-Credentials'] = 'true'
+    return response
 
 if __name__ == "__main__":
     print("Starting server...")

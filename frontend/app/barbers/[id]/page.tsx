@@ -1,29 +1,34 @@
 "use client"
 import Link from "next/link"
-import { Star, MessageSquare, Map } from "lucide-react"
+import { Star, MessageSquare, Map, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card } from "@/components/ui/card"
 import { CldImage } from "next-cloudinary"
+import { useEffect } from "react"
+import { useParams } from "next/navigation"
+import { useState } from "react"
+import axios from "axios"
 
 // This would come from your database
-const barber = {
-	id: 1,
-	name: "James Wilson",
-	styles: ["Modern Cut", "Classic Cut", "Fade", "Taper"],
+const barberPlaceholder = {
+	name: "...",
+	hairstyles: ["...", "...", "..."],
 	rating: 4.8,
-	price: 25,
-	neighborhood: "Brody",
-	description:
-		"I'm a professional barber with over 5 years of experience specializing in modern cuts and classic styles. Dedicated to providing top-quality service to every client.",
-	image: "barbers/czsglmmrbgriuyjfq2hn",
-	recentWork: [
-		"Haircuts/afgklpmolylk69unnhg4",
-		"Haircuts/yixerlv1tdh7ysbje2yo",
-		"Haircuts/xikrcwazsztlx8tanyzz",
-		"Haircuts/zuuzd3citxe50awp6cxc",
+	cost: 25,
+	neighborhood: "...",
+	biography:
+		"...",
+	image: "...",
+	example_images: [
 	],
+	profile_image: "",
+	"will-travel": false,
+	gender: "...",
+	dorm: "...",
 }
+
+
 
 function getBarberStyles(styles: string[]) {
 	return styles.join(", ")
@@ -32,6 +37,28 @@ function getBarberStyles(styles: string[]) {
 //p-4 md:p-6
 
 export default function BarberProfile() {
+
+	const { id } = useParams();
+
+	const [barberData, setBarberData] = useState<Barber>(barberPlaceholder);
+
+	useEffect(() => {
+		async function fetchBarber() {
+			console.log(process.env.NEXT_PUBLIC_BACKEND_URL, "is backend url");
+			try {
+				const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/get_barber`, {
+					params: { id }
+				});
+				console.log(response.data);
+				setBarberData(response.data[0]);
+			} catch (error) {
+				console.error('Error fetching barber:', error);
+			}
+		}
+
+		fetchBarber();
+	}, [id]);
+
 	return (
 		<div className="min-h-screen bg-background ">
 			{/* Header */}
@@ -48,25 +75,31 @@ export default function BarberProfile() {
 						<div>
 							<div className="flex items-center gap-2 mb-2">
 								<Star className="w-5 h-5 fill-gray-100 text-gray-100" />
-								<span className="font-semibold text-gray-100">{barber.rating}</span>
+								<span className="font-semibold text-gray-100">{barberData.rating}</span>
 							</div>
-							<h1 className="text-2xl font-bold mb-1 text-gray-100">{barber.name}</h1>
+							<h1 className="text-2xl font-bold mb-1 text-gray-100">{barberData.name}</h1>
 							<p className="text-gray-300 mb-2">
-								{getBarberStyles(barber.styles)}{" "}
+								{getBarberStyles(barberData.hairstyles)}{" "}
 							</p>
 							<p className="text-lg font-semibold text-gray-100">
-								${barber.price}/Cut
+								${barberData.cost}/Cut
 							</p>
 						</div>
 
 						<div className="shrink-0">
-							<CldImage
-								src={barber.image}
-								alt="Barber"
-								width={100}
-								height={100}
-								className="rounded-full object-cover aspect-square"
-							/>
+							{barberData.profile_image ? (
+								<CldImage
+									src={barberData.profile_image}
+									alt="Barber"
+									width={100}
+									height={100}
+									className="rounded-full object-cover aspect-square"
+								/>
+							) : (
+								<div className="w-[100px] h-[100px] rounded-full bg-gray-200 flex items-center justify-center">
+									<User className="w-12 h-12 text-gray-400" />
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
@@ -77,7 +110,7 @@ export default function BarberProfile() {
 			<div className="p-4 md:p-6 mx-auto max-w-2xl">
 				<div className="grid grid-cols-2 gap-4 mb-6">
 					{[
-						{ icon: Map, label: barber.neighborhood },
+						{ icon: Map, label: barberData.neighborhood },
 						{ icon: MessageSquare, label: "Message" },
 					].map((action) => (
 						<Button
@@ -109,7 +142,7 @@ export default function BarberProfile() {
 					</TabsList>
 					<TabsContent value="about" className="mt-4">
 						<Card className="p-4">
-							<p className="text-muted-foreground">{barber.description}</p>
+							<p className="text-muted-foreground">{barberData.biography}</p>
 						</Card>
 					</TabsContent>
 					<TabsContent value="services">
@@ -126,7 +159,7 @@ export default function BarberProfile() {
 				<div className="mb-6">
 					<h2 className="text-xl font-semibold mb-4">Recent Works</h2>
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-						{barber.recentWork.map((work, index) => (
+						{barberData.example_images.map((work, index) => (
 							<CldImage
 								key={index}
 								src={work}
@@ -146,4 +179,19 @@ export default function BarberProfile() {
 			</div>
 		</div>
 	)
+}
+
+
+interface Barber {
+  name: string;
+  hairstyles: string[];
+  rating: number;
+  gender: string;
+  dorm: string;
+  neighborhood: string;
+  "will-travel": boolean;
+  biography: string;
+  cost: number;
+  example_images: string[];
+  profile_image: string;
 }
