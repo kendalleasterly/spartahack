@@ -9,6 +9,8 @@ import { useEffect } from "react"
 import { useParams } from "next/navigation"
 import { useState } from "react"
 import axios from "axios"
+import Barber from "@/lib/schemas"
+import {getBarberStyles} from "../utils"
 
 // This would come from your database
 const barberPlaceholder = {
@@ -26,13 +28,10 @@ const barberPlaceholder = {
 	"will-travel": false,
 	gender: "...",
 	dorm: "...",
+	_id: "",
 }
 
 
-
-function getBarberStyles(styles: string[]) {
-	return styles.join(", ")
-}
 
 //p-4 md:p-6
 
@@ -126,7 +125,7 @@ export default function BarberProfile() {
 
 				{/* Tabs */}
 				<Tabs defaultValue="about" className="mb-6">
-					<TabsList className="grid grid-cols-2 w-full bg-emerald-100">
+					<TabsList className="grid grid-cols-2 w-full bg-emerald-50">
 						<TabsTrigger
 							value="about"
 							className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
@@ -173,25 +172,15 @@ export default function BarberProfile() {
 				</div>
 
 				{/* Book Button */}
-				<Button className="w-full py-6 text-lg bg-primary hover:bg-primary-600 text-primary-foreground">
-					Book Appointment
-				</Button>
+				<Link href={`/barbers/${id}/book`}>
+					<Button className="w-full py-6 text-lg bg-primary hover:bg-primary-600 text-primary-foreground">
+						Book Appointment
+					</Button>
+				</Link>
 			</div>
 		</div>
 	)
 }
 
 
-interface Barber {
-  name: string;
-  hairstyles: string[];
-  rating: number;
-  gender: string;
-  dorm: string;
-  neighborhood: string;
-  "will-travel": boolean;
-  biography: string;
-  cost: number;
-  example_images: string[];
-  profile_image: string;
-}
+

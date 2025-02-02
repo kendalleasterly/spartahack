@@ -4,13 +4,17 @@ from bson.objectid import ObjectId
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from flask_cors import CORS
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # Initialize Flask with __name__
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 # MongoDB connection setup
-client = MongoClient(os.getenv("MONGO_URI", ""))
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
 db = client["barber-database"]
 collection = db["barbers"]
 sessions_collection = db["sessions"]

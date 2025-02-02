@@ -1,0 +1,51 @@
+name,hairstyles,rating,gender,dorm,neighborhood,will-travel,biography,cost
+Casey Brown,"Twists, Buzz Cuts, Braids",4.5,Male,Bryan,Brody,FALSE,Creative with color and texture.,20.25
+Jordan Lee,"Braids, Fades, Afros",4.9,Female,Shaw,River Trail,TRUE,Expert in trendy and edgy cuts.,20.5
+Kris Nguyen,"Buzz Cuts, Pompadours, Crew Cuts",4.5,Male,Bailey,Brody,FALSE,Known for precision and creativity.,20.75
+Drew Garcia,"Afros, Shaggy, Pompadours",3.6,Non-Binary,Bryan,Brody,FALSE,Known for precision and creativity.,21
+Jamie Patel,"Pompadours, Fades, Braids",4.1,Male,Holden,South,FALSE,Expert in trendy and edgy cuts.,21.25
+Jordan Lee,"Undercuts, Buzz Cuts, Twists",3.7,Female,Shaw,River Trail,TRUE,Passionate about classic and modern styles.,21.5
+Riley Chen,"Pompadours, Undercuts, Buzz Cuts",4,Non-Binary,Case,South,TRUE,Creative with color and texture.,21.75
+Jamie Patel,"Crew Cuts, Bobs, Fades",3.9,Non-Binary,Armstrong,Brody,FALSE,Expert in trendy and edgy cuts.,22
+Drew Garcia,"Shaggy, Braids, Afros",4.1,Non-Binary,Snyder-Phillips,North,FALSE,Focused on comfort and great conversation.,22.25
+Morgan Yu,"Crew Cuts, Bobs, Buzz Cuts",4.6,Female,Armstrong,Brody,FALSE,Barbering with a touch of style.,22.5
+Taylor Kim,"Shaggy, Braids, Undercuts",3.9,Female,Holden,South,TRUE,Detail-oriented and always on trend.,22.75
+Taylor Kim,"Crew Cuts, Braids, Buzz Cuts",3.8,Female,Case,South,TRUE,Specialize in fades and sharp lines.,23
+Riley Chen,"Afros, Bobs, Braids",3.7,Non-Binary,McDonel,River Trail,FALSE,Detail-oriented and always on trend.,23.25
+Jamie Patel,"Afros, Pompadours, Braids",4.7,Male,Armstrong,Brody,TRUE,Detail-oriented and always on trend.,23.5
+Skyler Green,"Twists, Pompadours, Buzz Cuts",4,Non-Binary,McDonel,River Trail,FALSE,Barbering with a touch of style.,23.75
+Kris Nguyen,"Bobs, Crew Cuts, Afros",4.1,Non-Binary,Akers,East,TRUE,Passionate about classic and modern styles.,24
+Drew Garcia,"Bobs, Shaggy, Crew Cuts",4.7,Non-Binary,Bryan,Brody,TRUE,Passionate about classic and modern styles.,24.25
+Riley Chen,"Undercuts, Afros, Crew Cuts",4.4,Non-Binary,Snyder-Phillips,North,TRUE,Expert in trendy and edgy cuts.,24.5
+Taylor Kim,"Bobs, Crew Cuts, Fades",4.7,Non-Binary,Holmes,East,FALSE,Detail-oriented and always on trend.,24.75
+Riley Chen,"Shaggy, Undercuts, Crew Cuts",4.9,Female,Shaw,River Trail,FALSE,Specialize in fades and sharp lines.,25
+Skyler Green,"Buzz Cuts, Shaggy, Braids",4.1,Female,Case,South,FALSE,Passionate about classic and modern styles.,25.25
+Kris Nguyen,"Braids, Buzz Cuts, Bobs",4.4,Male,Bailey,Brody,TRUE,Passionate about classic and modern styles.,25.5
+Jamie Patel,"Afros, Fades, Buzz Cuts",3.8,Female,Wonders,South,TRUE,Focused on comfort and great conversation.,25.75
+Jamie Patel,"Pompadours, Braids, Crew Cuts",4.1,Non-Binary,Akers,East,TRUE,Detail-oriented and always on trend.,26
+Alex Rivera,"Afros, Crew Cuts, Fades",4.6,Non-Binary,Butterfield,Brody,FALSE,Specialize in fades and sharp lines.,26.25
+Drew Garcia,"Pompadours, Shaggy, Braids",4,Male,Armstrong,Brody,FALSE,Detail-oriented and always on trend.,26.5
+Jordan Lee,"Twists, Buzz Cuts, Crew Cuts",4.2,Male,Case,South,TRUE,Creative with color and texture.,26.75
+Jamie Patel,"Pompadours, Crew Cuts, Bobs",4.7,Male,Case,South,TRUE,Known for precision and creativity.,27
+Kris Nguyen,"Buzz Cuts, Shaggy, Twists",4.9,Non-Binary,Wonders,South,FALSE,Focused on comfort and great conversation.,27.25
+Jordan Lee,"Undercuts, Afros, Crew Cuts",3.6,Male,Armstrong,Brody,FALSE,Passionate about classic and modern styles.,27.5
+Taylor Kim,"Bobs, Fades, Pompadours",3.6,Non-Binary,Bailey,Brody,TRUE,Focused on comfort and great conversation.,27.75
+Riley Chen,"Crew Cuts, Pompadours, Twists",3.7,Non-Binary,Holden,South,TRUE,Detail-oriented and always on trend.,28
+Skyler Green,"Afros, Bobs, Buzz Cuts",3.8,Female,Wonders,South,TRUE,Specialize in fades and sharp lines.,28.25
+Morgan Yu,"Shaggy, Braids, Afros",3.5,Female,Wonders,South,TRUE,Passionate about classic and modern styles.,28.5
+Taylor Kim,"Crew Cuts, Bobs, Undercuts",4.8,Female,Holmes,East,TRUE,Detail-oriented and always on trend.,28.75
+Skyler Green,"Pompadours, Afros, Shaggy",4.5,Female,Bryan,Brody,FALSE,Creative with color and texture.,29
+Alex Rivera,"Crew Cuts, Undercuts, Buzz Cuts",4.1,Non-Binary,Snyder-Phillips,North,FALSE,Passionate about classic and modern styles.,29.25
+Alex Rivera,"Shaggy, Undercuts, Pompadours",4.1,Male,McDonel,River Trail,FALSE,Detail-oriented and always on trend.,29.5
+Riley Chen,"Braids, Crew Cuts, Afros",4.1,Female,Bryan,Brody,TRUE,Passionate about classic and modern styles.,29.75
+Riley Chen,"Undercuts, Crew Cuts, Bobs",5,Female,Bailey,Brody,FALSE,Specialize in fades and sharp lines.,30
+Morgan Yu,"Buzz Cuts, Shaggy, Undercuts",4.3,Male,Butterfield,Brody,FALSE,Love creating personalized looks for everyone.,30.25
+Drew Garcia,"Twists, Buzz Cuts, Fades",4.9,Non-Binary,Wonders,South,FALSE,Creative with color and texture.,30.5
+Alex Rivera,"Braids, Twists, Fades",4.5,Male,Bryan,Brody,FALSE,Focused on comfort and great conversation.,30.75
+Skyler Green,"Undercuts, Bobs, Shaggy",4.4,Female,Butterfield,Brody,FALSE,Creative with color and texture.,31
+Jamie Patel,"Fades, Undercuts, Twists",4.5,Male,Emmons,Brody,TRUE,Specialize in fades and sharp lines.,31.25
+Morgan Yu,"Crew Cuts, Pompadours, Afros",3.9,Non-Binary,Snyder-Phillips,North,FALSE,Barbering with a touch of style.,31.5
+Jordan Lee,"Buzz Cuts, Crew Cuts, Braids",4.3,Male,Butterfield,Brody,TRUE,Detail-oriented and always on trend.,31.75
+Morgan Yu,"Bobs, Crew Cuts, Undercuts",4.4,Non-Binary,Akers,East,TRUE,Love creating personalized looks for everyone.,32
+Riley Chen,"Afros, Undercuts, Fades",4.9,Non-Binary,Snyder-Phillips,North,TRUE,Specialize in fades and sharp lines.,32.25
+Taylor Kim,"Twists, Fades, Buzz Cuts",4.6,Female,Butterfield,Brody,TRUE,Known for precision and creativity.,32.5

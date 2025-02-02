@@ -1,7 +1,8 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import axios from "axios"
 import { Search, Star, MapPin, Upload } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -22,46 +23,8 @@ import {
 import { Slider } from "@/components/ui/slider"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { CldImage } from "next-cloudinary"
-
-// This would come from your database
-const popularBarbers = [
-	{
-		id: 1,
-		name: "Mike",
-		image: "barbers/pcdbnkg0v4tjxpn81imq",
-		featured: true,
-	},
-	{ id: 2, name: "Sarah", image: "barbers/czsglmmrbgriuyjfq2hn" },
-	{ id: 3, name: "John", image: "barbers/v3ofdobuknt9yvuzu8p0" },
-	{ id: 4, name: "Lisa", image: "barbers/cnznrvjpnia5htamwfwi" },
-	{ id: 5, name: "David", image: "barbers/w8wljpnc1pydejtwywva" },
-]
-
-const barbers = [
-	{
-		id: 1,
-		name: "Mike Wilson",
-		service: "Master Barber",
-		rating: 4.8,
-		price: 35,
-		neighborhood: "North Campus",
-		image: "barbers/pcdbnkg0v4tjxpn81imq",
-		styles: ["Modern Cut", "Classic Cut", "Fade", "Taper"],
-		gender: "male",
-	},
-	{
-		id: 2,
-		name: "Sarah Chen",
-		service: "Hair Stylist",
-		rating: 4.2,
-		price: 30,
-		neighborhood: "South Campus",
-		image: "barbers/czsglmmrbgriuyjfq2hn",
-		styles: ["Pixie Cut", "Bob Cut", "Layered Cut", "Hair Coloring"],
-		gender: "female",
-	},
-	// Add more barbers...
-]
+import Barber from "@/lib/schemas"
+import {getBarberStyles, formatBarberName} from "./utils"
 
 export default function BarbersPage() {
 	const [searchQuery, setSearchQuery] = useState("")
@@ -70,16 +33,37 @@ export default function BarbersPage() {
 		maxPrice: 100,
 		gender: "all",
 	})
+	const [barbers, setBarbers] = useState<Barber[]>([])
 
-	const filteredBarbers = barbers.filter((barber) => {
-		return (
-			barber.rating >= filters.minRating &&
-			barber.price <= filters.maxPrice &&
-			(filters.gender === "all" || barber.gender === filters.gender) &&
-			(barber.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-				barber.service.toLowerCase().includes(searchQuery.toLowerCase()))
-		)
-	})
+	useEffect(() => {
+		async function fetchBarbers() {
+			try {
+				const params: Record<string, string | number> = {}
+				if (searchQuery.trim()) {
+					params.name = searchQuery.trim()
+				}
+				if (filters.minRating > 0) {
+					params.rating = filters.minRating
+				}
+				if (filters.maxPrice < 100) {
+					params.cost = filters.maxPrice
+				}
+				if (filters.gender !== "all") {
+					params.gender = filters.gender
+				}
+				const response = await axios.get(
+					`${process.env.NEXT_PUBLIC_BACKEND_URL}/get_barber`,
+					{ params }
+				)
+				setBarbers(response.data)
+			} catch (error) {
+				console.error("Error fetching barbers:", error)
+			}
+		}
+		fetchBarbers()
+	}, [searchQuery, filters])
+	
+	const popularBarbers = barbers.filter((barber) => barber.rating >= 4.5)
 
 	return (
 		<div className="min-h-screen bg-background">
@@ -124,20 +108,20 @@ export default function BarbersPage() {
 						<div className="flex gap-4 pb-4">
 							{popularBarbers.map((barber) => (
 								<Link
-									href={`/barbers/${barber.id}`}
-									key={barber.id}
+									href={`/barbers/${barber._id}`}
+									key={barber._id}
 									className="flex flex-col items-center gap-2 min-w-[80px] hover:opacity-80 transition-opacity"
 								>
 									<div className="relative">
 										<CldImage
-											src={barber.image}
+											src={barber.profile_image}
 											alt={barber.name}
 											width={80}
 											height={80}
 											className="rounded-full object-cover aspect-square p-1 border-2 border-primary-900 hover:border-primary-900 transition-colors"
 										/>
 									</div>
-									<span className="text-sm">{barber.name}</span>
+									<span className="text-sm">{formatBarberName(barber.name)}</span>
 								</Link>
 							))}
 						</div>
@@ -148,7 +132,7 @@ export default function BarbersPage() {
 				{/* Filters */}
 				<div className="flex items-center justify-between mb-4">
 					<h2 className="text-xl font-semibold">
-						Results Found ({filteredBarbers.length})
+						Results Found ({barbers.length})
 					</h2>
 					<Sheet>
 						<SheetTrigger asChild>
@@ -214,14 +198,14 @@ export default function BarbersPage() {
 
 				{/* Barber List */}
 				<div className="grid gap-4">
-					{filteredBarbers.map((barber) => (
+					{barbers.map((barber) => (
 						<Link
-							key={barber.id}
-							href={`/barbers/${barber.id}`}
+							key={barber._id}
+							href={`/barbers/${barber._id}`}
 							className="flex gap-4 p-4 bg-card rounded-lg border hover:border-primary-300 transition-colors shadow-sm"
 						>
 							<CldImage
-								src={barber.image}
+								src={barber.profile_image}
 								alt={barber.name}
 								width={80}
 								height={80}
@@ -236,13 +220,13 @@ export default function BarbersPage() {
 										<span className="text-sm">{barber.neighborhood}</span>
 									</div>
 								</div>
-								<h3 className="font-semibold mb-1">{barber.service}</h3>
+								<h3 className="font-semibold mb-1">{barber.name}</h3>
 								<p className="text-sm text-muted-foreground mb-2">
-									By {barber.name}
+									{getBarberStyles(barber.hairstyles)}
 								</p>
 								<div className="flex items-center justify-between">
 									<span className="font-semibold">
-										${barber.price}
+										${barber.cost}
 										<span className="text-sm text-muted-foreground">/Cut</span>
 									</span>
 									<Button size="sm" className="bg-emerald-50 text-black-600">Book</Button>
