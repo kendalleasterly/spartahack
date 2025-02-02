@@ -1,0 +1,1083 @@
+[
+  {
+    "name": "Casey Brown",
+    "hairstyles": [
+      "Twists",
+      "Buzz Cuts",
+      "Braids"
+    ],
+    "rating": 4.5,
+    "gender": "Male",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Creative with color and texture.",
+    "cost": 20.25,
+    "example_images": [
+      "Haircuts/mens haircuts/bnodb2430aowtajxrsff",
+      "Haircuts/mens haircuts/tbtmu8axxrqrrth2isup",
+      "Haircuts/mens haircuts/gptrjrrg39aolbjrvpij",
+      "Haircuts/mens haircuts/vcg7mzre5hu6jd7cm3na"
+    ],
+    "profile_image": "barbers/mens barbers/uz42sl6tjrkzjaxh1sv0"
+  },
+  {
+    "name": "Jordan Lee",
+    "hairstyles": [
+      "Braids",
+      "Fades",
+      "Afros"
+    ],
+    "rating": 4.9,
+    "gender": "Female",
+    "dorm": "Shaw",
+    "neighborhood": "River Trail",
+    "will-travel": true,
+    "biography": "Expert in trendy and edgy cuts.",
+    "cost": 20.5,
+    "example_images": [
+      "Haircuts/womens haircuts/qweqbxcvyjacu3nrpzgf",
+      "Haircuts/womens haircuts/ydjbmdrzfinpexmvzgzn",
+      "Haircuts/womens haircuts/g4il2a6phaqd5ljebhib",
+      "Haircuts/womens haircuts/a6xper8tm8mfuahenjrf"
+    ],
+    "profile_image": "barbers/women barbers/srro4uzgngfhvvjvg7nq"
+  },
+  {
+    "name": "Kris Nguyen",
+    "hairstyles": [
+      "Buzz Cuts",
+      "Pompadours",
+      "Crew Cuts"
+    ],
+    "rating": 4.5,
+    "gender": "Male",
+    "dorm": "Bailey",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Known for precision and creativity.",
+    "cost": 20.75,
+    "example_images": [
+      "Haircuts/mens haircuts/ni3lp5z4eiuswjbed9fq",
+      "Haircuts/mens haircuts/s8gr2ksl7lqmmqvr6j6a",
+      "Haircuts/mens haircuts/krximzmpu25gjbcm05o8",
+      "Haircuts/mens haircuts/aa97q8txlwcniermlxze"
+    ],
+    "profile_image": "barbers/mens barbers/snpri4w0zftozi0ke6rn"
+  },
+  {
+    "name": "Drew Garcia",
+    "hairstyles": [
+      "Afros",
+      "Shaggy",
+      "Pompadours"
+    ],
+    "rating": 3.6,
+    "gender": "male",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Known for precision and creativity.",
+    "cost": 21.0,
+    "example_images": [
+      "Haircuts/mens haircuts/asc5bowck1q2bsqu2qmg",
+      "Haircuts/mens haircuts/aa97q8txlwcniermlxze",
+      "Haircuts/mens haircuts/rcbptoarlnss5fhqgwhu",
+      "Haircuts/mens haircuts/pwnkg97sy2uxgs5zexqb"
+    ],
+    "profile_image": "barbers/mens barbers/p04k9ueumzu8lxkzquj8"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Pompadours",
+      "Fades",
+      "Braids"
+    ],
+    "rating": 4.1,
+    "gender": "Male",
+    "dorm": "Holden",
+    "neighborhood": "South",
+    "will-travel": false,
+    "biography": "Expert in trendy and edgy cuts.",
+    "cost": 21.25,
+    "example_images": [
+      "Haircuts/mens haircuts/hddwcx4tzezacujpf4yp",
+      "Haircuts/mens haircuts/vlj0dzur52jt6hdynfnc"
+    ],
+    "profile_image": "barbers/mens barbers/tjopkxxj6fx9ls3zpngl"
+  },
+  {
+    "name": "Jordan Lee",
+    "hairstyles": [
+      "Undercuts",
+      "Buzz Cuts",
+      "Twists"
+    ],
+    "rating": 3.7,
+    "gender": "Female",
+    "dorm": "Shaw",
+    "neighborhood": "River Trail",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 21.5,
+    "example_images": [
+      "Haircuts/womens haircuts/vk2vdwdnsgyuacjopa1x",
+      "Haircuts/womens haircuts/k1kefrh7gtp6hbtqvcyp",
+      "Haircuts/womens haircuts/nsj4l4bxyhvxmqvejt4w",
+      "Haircuts/womens haircuts/ocabpr8zkmk121vf7ldc",
+      "Haircuts/womens haircuts/mtilisxcgxf2yqogmjq6"
+    ],
+    "profile_image": "barbers/women barbers/tq8xedaushivexsrfen3"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Pompadours",
+      "Undercuts",
+      "Buzz Cuts"
+    ],
+    "rating": 4.0,
+    "gender": "male",
+    "dorm": "Case",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Creative with color and texture.",
+    "cost": 21.75,
+    "example_images": [
+      "Haircuts/mens haircuts/cvqcffzpogcoermrf975",
+      "Haircuts/mens haircuts/s3qzicayo5ijt0tbpx47",
+      "Haircuts/mens haircuts/fezj0hxmyuqkwymqu5lx",
+      "Haircuts/mens haircuts/asc5bowck1q2bsqu2qmg",
+      "Haircuts/mens haircuts/xmy0enw9dv9ucb36yh5d"
+    ],
+    "profile_image": "barbers/mens barbers/snpri4w0zftozi0ke6rn"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Crew Cuts",
+      "Bobs",
+      "Fades"
+    ],
+    "rating": 3.9,
+    "gender": "male",
+    "dorm": "Armstrong",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Expert in trendy and edgy cuts.",
+    "cost": 22.0,
+    "example_images": [
+      "Haircuts/mens haircuts/g3eckykfpexwm4cyxuba",
+      "Haircuts/mens haircuts/asc5bowck1q2bsqu2qmg",
+      "Haircuts/mens haircuts/qvexguzdvu6wuxgosxbb"
+    ],
+    "profile_image": "barbers/mens barbers/t3leexg28tbbzwcey4pr"
+  },
+  {
+    "name": "Drew Garcia",
+    "hairstyles": [
+      "Shaggy",
+      "Braids",
+      "Afros"
+    ],
+    "rating": 4.1,
+    "gender": "male",
+    "dorm": "Snyder-Phillips",
+    "neighborhood": "North",
+    "will-travel": false,
+    "biography": "Focused on comfort and great conversation.",
+    "cost": 22.25,
+    "example_images": [
+      "Haircuts/mens haircuts/d7loqji0vcofx2f1edlb",
+      "Haircuts/mens haircuts/vlj0dzur52jt6hdynfnc",
+      "Haircuts/mens haircuts/kcxm87gjn6tcq9u4xagt",
+      "Haircuts/mens haircuts/hddwcx4tzezacujpf4yp",
+      "Haircuts/mens haircuts/jwapcah7zv9gzmiktxtf"
+    ],
+    "profile_image": "barbers/mens barbers/y7qzuryql9igoqylxcak"
+  },
+  {
+    "name": "Morgan Yu",
+    "hairstyles": [
+      "Crew Cuts",
+      "Bobs",
+      "Buzz Cuts"
+    ],
+    "rating": 4.6,
+    "gender": "Female",
+    "dorm": "Armstrong",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Barbering with a touch of style.",
+    "cost": 22.5,
+    "example_images": [
+      "Haircuts/womens haircuts/oqic7vocbivbeo2zaonr",
+      "Haircuts/womens haircuts/ocabpr8zkmk121vf7ldc",
+      "Haircuts/womens haircuts/aqqyqs9ib2jk8kx3ef3l"
+    ],
+    "profile_image": "barbers/women barbers/y0au4jtu10sdcgjuw1qg"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Shaggy",
+      "Braids",
+      "Undercuts"
+    ],
+    "rating": 3.9,
+    "gender": "Female",
+    "dorm": "Holden",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 22.75,
+    "example_images": [
+      "Haircuts/womens haircuts/j0vjhd0c9zism4vgeoai",
+      "Haircuts/womens haircuts/urvieyvqxg6dvl4zqds2",
+      "Haircuts/womens haircuts/avus09pr1ufbtca08b1r"
+    ],
+    "profile_image": "barbers/women barbers/wgb53yd5f77hst1jhuuw"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Crew Cuts",
+      "Braids",
+      "Buzz Cuts"
+    ],
+    "rating": 3.8,
+    "gender": "Female",
+    "dorm": "Case",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 23.0,
+    "example_images": [
+      "Haircuts/womens haircuts/wngqnm4xzuulrsku1u4p",
+      "Haircuts/womens haircuts/reqgwexcjp94epljkq4l",
+      "Haircuts/womens haircuts/vk2vdwdnsgyuacjopa1x",
+      "Haircuts/womens haircuts/wzc1x8cwl9wlpgzzhp37"
+    ],
+    "profile_image": "barbers/women barbers/irhqxjnqja8ml5sw4lxl"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Afros",
+      "Bobs",
+      "Braids"
+    ],
+    "rating": 3.7,
+    "gender": "Non-Binary",
+    "dorm": "McDonel",
+    "neighborhood": "River Trail",
+    "will-travel": false,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 23.25,
+    "example_images": [
+      "Haircuts/mens haircuts/ydlmbmzhfmztosmacuea",
+      "Haircuts/mens haircuts/tbtmu8axxrqrrth2isup"
+    ],
+    "profile_image": "barbers/women barbers/irhqxjnqja8ml5sw4lxl"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Afros",
+      "Pompadours",
+      "Braids"
+    ],
+    "rating": 4.7,
+    "gender": "Male",
+    "dorm": "Armstrong",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 23.5,
+    "example_images": [
+      "Haircuts/mens haircuts/ymvnpedzd1fneav6o155",
+      "Haircuts/mens haircuts/bvtq94tsz9ze4dgcxvbd",
+      "Haircuts/mens haircuts/rvipyorauxavzupen4sf"
+    ],
+    "profile_image": "barbers/mens barbers/cpnqeuo0vglinril1lez"
+  },
+  {
+    "name": "Skyler Green",
+    "hairstyles": [
+      "Twists",
+      "Pompadours",
+      "Buzz Cuts"
+    ],
+    "rating": 4.0,
+    "gender": "Non-Binary",
+    "dorm": "McDonel",
+    "neighborhood": "River Trail",
+    "will-travel": false,
+    "biography": "Barbering with a touch of style.",
+    "cost": 23.75,
+    "example_images": [
+      "Haircuts/mens haircuts/gptrjrrg39aolbjrvpij",
+      "Haircuts/mens haircuts/zqsftnogf0dy8nrgpo8d",
+      "Haircuts/womens haircuts/izek6msvhq7smuggzi43"
+    ],
+    "profile_image": "barbers/women barbers/mdyv50pu6bhrj5legtjs"
+  },
+  {
+    "name": "Kris Nguyen",
+    "hairstyles": [
+      "Bobs",
+      "Crew Cuts",
+      "Afros"
+    ],
+    "rating": 4.1,
+    "gender": "male",
+    "dorm": "Akers",
+    "neighborhood": "East",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 24.0,
+    "example_images": [
+      "Haircuts/mens haircuts/tgpvx6vwvsin00vyj9os",
+      "Haircuts/mens haircuts/ex1d1wtkixyty8m9bxlr"
+    ],
+    "profile_image": "barbers/mens barbers/tjopkxxj6fx9ls3zpngl"
+  },
+  {
+    "name": "Drew Garcia",
+    "hairstyles": [
+      "Bobs",
+      "Shaggy",
+      "Crew Cuts"
+    ],
+    "rating": 4.7,
+    "gender": "male",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 24.25,
+    "example_images": [
+      "Haircuts/mens haircuts/g9s51dnm15k2k9aj1t0p",
+      "Haircuts/mens haircuts/xkssbzo7od11iyuwnpxx",
+      "Haircuts/mens haircuts/ydlmbmzhfmztosmacuea"
+    ],
+    "profile_image": "barbers/mens barbers/tjopkxxj6fx9ls3zpngl"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Undercuts",
+      "Afros",
+      "Crew Cuts"
+    ],
+    "rating": 4.4,
+    "gender": "male",
+    "dorm": "Snyder-Phillips",
+    "neighborhood": "North",
+    "will-travel": true,
+    "biography": "Expert in trendy and edgy cuts.",
+    "cost": 24.5,
+    "example_images": [
+      "Haircuts/mens haircuts/wbpxnhgugtozydlvzrqx",
+      "Haircuts/mens haircuts/yifc8g20cudgwxupa3rp",
+      "Haircuts/mens haircuts/bvtq94tsz9ze4dgcxvbd",
+      "Haircuts/mens haircuts/k8bz9phr9br0ytbjgtlf"
+    ],
+    "profile_image": "barbers/mens barbers/fsdyoz0ozroikhtpb5cd"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Bobs",
+      "Crew Cuts",
+      "Fades"
+    ],
+    "rating": 4.7,
+    "gender": "male",
+    "dorm": "Holmes",
+    "neighborhood": "East",
+    "will-travel": false,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 24.75,
+    "example_images": [
+      "Haircuts/mens haircuts/zm2gxiwvn6g2e5tqprq7",
+      "Haircuts/mens haircuts/jf836ijuzeuma1sfmwky",
+      "Haircuts/mens haircuts/osope8vsg3xgkp60vj9m",
+      "Haircuts/mens haircuts/yifc8g20cudgwxupa3rp",
+      "Haircuts/mens haircuts/hddwcx4tzezacujpf4yp"
+    ],
+    "profile_image": "barbers/mens barbers/wmq5ggifhucuzizf6anu"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Shaggy",
+      "Undercuts",
+      "Crew Cuts"
+    ],
+    "rating": 4.9,
+    "gender": "Female",
+    "dorm": "Shaw",
+    "neighborhood": "River Trail",
+    "will-travel": false,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 25.0,
+    "example_images": [
+      "Haircuts/womens haircuts/kdvmdvgob8ju38tjjxk4",
+      "Haircuts/womens haircuts/dombbclzitbm2nlz4u8y",
+      "Haircuts/womens haircuts/mnvvqxwwc4ivshmrxnbi",
+      "Haircuts/womens haircuts/vq6fczy594enq90btuey"
+    ],
+    "profile_image": "barbers/women barbers/fwgfyxi37wdyrowzz48c"
+  },
+  {
+    "name": "Skyler Green",
+    "hairstyles": [
+      "Buzz Cuts",
+      "Shaggy",
+      "Braids"
+    ],
+    "rating": 4.1,
+    "gender": "Female",
+    "dorm": "Case",
+    "neighborhood": "South",
+    "will-travel": false,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 25.25,
+    "example_images": [
+      "Haircuts/womens haircuts/vq6fczy594enq90btuey",
+      "Haircuts/womens haircuts/bsvstupc1lmjujywidug",
+      "Haircuts/womens haircuts/pbqrfmw4vt6owtfoiurl"
+    ],
+    "profile_image": "barbers/women barbers/fwgfyxi37wdyrowzz48c"
+  },
+  {
+    "name": "Kris Nguyen",
+    "hairstyles": [
+      "Braids",
+      "Buzz Cuts",
+      "Bobs"
+    ],
+    "rating": 4.4,
+    "gender": "Male",
+    "dorm": "Bailey",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 25.5,
+    "example_images": [
+      "Haircuts/mens haircuts/fsdp23jsk2qpe4kpbqiu",
+      "Haircuts/mens haircuts/d7loqji0vcofx2f1edlb",
+      "Haircuts/mens haircuts/fyqmxclm98azmyo4va4f",
+      "Haircuts/mens haircuts/bvtq94tsz9ze4dgcxvbd",
+      "Haircuts/mens haircuts/vlj0dzur52jt6hdynfnc"
+    ],
+    "profile_image": "barbers/mens barbers/d3lmux7ifjyhysdwjcf6"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Afros",
+      "Fades",
+      "Buzz Cuts"
+    ],
+    "rating": 3.8,
+    "gender": "Female",
+    "dorm": "Wonders",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Focused on comfort and great conversation.",
+    "cost": 25.75,
+    "example_images": [
+      "Haircuts/womens haircuts/qzhv96leubxyznsucjjr",
+      "Haircuts/womens haircuts/a6xper8tm8mfuahenjrf",
+      "Haircuts/womens haircuts/qweqbxcvyjacu3nrpzgf",
+      "Haircuts/womens haircuts/mvke3xxylnlfm2xr4dbj"
+    ],
+    "profile_image": "barbers/women barbers/fay8y8zqai5c14uzwind"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Pompadours",
+      "Braids",
+      "Crew Cuts"
+    ],
+    "rating": 4.1,
+    "gender": "male",
+    "dorm": "Akers",
+    "neighborhood": "East",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 26.0,
+    "example_images": [
+      "Haircuts/mens haircuts/f4gmnoty8hudibusbf5d",
+      "Haircuts/mens haircuts/ya4scyhogotjcdcdj8ot",
+      "Haircuts/mens haircuts/ilsd31sh2i3jzanfurdq"
+    ],
+    "profile_image": "barbers/mens barbers/nzdwrgev2kqdbusvvufg"
+  },
+  {
+    "name": "Alex Rivera",
+    "hairstyles": [
+      "Afros",
+      "Crew Cuts",
+      "Fades"
+    ],
+    "rating": 4.6,
+    "gender": "male",
+    "dorm": "Butterfield",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 26.25,
+    "example_images": [
+      "Haircuts/mens haircuts/ya4scyhogotjcdcdj8ot",
+      "Haircuts/mens haircuts/trqte8upohuy64bwzhbr",
+      "Haircuts/mens haircuts/krximzmpu25gjbcm05o8",
+      "Haircuts/mens haircuts/k8bz9phr9br0ytbjgtlf",
+      "Haircuts/mens haircuts/vchaq8riefpgceembmv6"
+    ],
+    "profile_image": "barbers/mens barbers/cktay6fbwpvtnqszm4aq"
+  },
+  {
+    "name": "Drew Garcia",
+    "hairstyles": [
+      "Pompadours",
+      "Shaggy",
+      "Braids"
+    ],
+    "rating": 4.0,
+    "gender": "Male",
+    "dorm": "Armstrong",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 26.5,
+    "example_images": [
+      "Haircuts/mens haircuts/cwtjxe7bax7pvjkltjsx",
+      "Haircuts/mens haircuts/kjohdmnesp4u6ekmscq0",
+      "Haircuts/mens haircuts/b9pcuqfzwi6to85iwju8",
+      "Haircuts/mens haircuts/vrmzboyrsdwrqyq825wn",
+      "Haircuts/mens haircuts/fezj0hxmyuqkwymqu5lx"
+    ],
+    "profile_image": "barbers/mens barbers/vqbi4uzvqesouncvtjpn"
+  },
+  {
+    "name": "Jordan Lee",
+    "hairstyles": [
+      "Twists",
+      "Buzz Cuts",
+      "Crew Cuts"
+    ],
+    "rating": 4.2,
+    "gender": "Male",
+    "dorm": "Case",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Creative with color and texture.",
+    "cost": 26.75,
+    "example_images": [
+      "Haircuts/mens haircuts/hmzqezlmjbuxbrrqljzh",
+      "Haircuts/mens haircuts/tdjk0iicf0bh6p8p2jyb"
+    ],
+    "profile_image": "barbers/mens barbers/d3lmux7ifjyhysdwjcf6"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Pompadours",
+      "Crew Cuts",
+      "Bobs"
+    ],
+    "rating": 4.7,
+    "gender": "Male",
+    "dorm": "Case",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Known for precision and creativity.",
+    "cost": 27.0,
+    "example_images": [
+      "Haircuts/mens haircuts/tgpvx6vwvsin00vyj9os",
+      "Haircuts/mens haircuts/ilsd31sh2i3jzanfurdq",
+      "Haircuts/mens haircuts/jf836ijuzeuma1sfmwky",
+      "Haircuts/mens haircuts/ni3lp5z4eiuswjbed9fq"
+    ],
+    "profile_image": "barbers/mens barbers/gdpq4bl6tv4mlsd7btgc"
+  },
+  {
+    "name": "Kris Nguyen",
+    "hairstyles": [
+      "Buzz Cuts",
+      "Shaggy",
+      "Twists"
+    ],
+    "rating": 4.9,
+    "gender": "male",
+    "dorm": "Wonders",
+    "neighborhood": "South",
+    "will-travel": false,
+    "biography": "Focused on comfort and great conversation.",
+    "cost": 27.25,
+    "example_images": [
+      "Haircuts/mens haircuts/s3qzicayo5ijt0tbpx47",
+      "Haircuts/mens haircuts/tkisadt8mbktuk8fgpkj"
+    ],
+    "profile_image": "barbers/mens barbers/tjopkxxj6fx9ls3zpngl"
+  },
+  {
+    "name": "Jordan Lee",
+    "hairstyles": [
+      "Undercuts",
+      "Afros",
+      "Crew Cuts"
+    ],
+    "rating": 3.6,
+    "gender": "Male",
+    "dorm": "Armstrong",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 27.5,
+    "example_images": [
+      "Haircuts/mens haircuts/xkssbzo7od11iyuwnpxx",
+      "Haircuts/mens haircuts/b9jn44auh080vnm7uzjt"
+    ],
+    "profile_image": "barbers/mens barbers/lgjrrlhrbkd9wfdz0xds"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Bobs",
+      "Fades",
+      "Pompadours"
+    ],
+    "rating": 3.6,
+    "gender": "Non-Binary",
+    "dorm": "Bailey",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Focused on comfort and great conversation.",
+    "cost": 27.75,
+    "example_images": [
+      "Haircuts/womens haircuts/g9p20rlup1lh67qth62g",
+      "Haircuts/mens haircuts/rvipyorauxavzupen4sf",
+      "Haircuts/mens haircuts/g9s51dnm15k2k9aj1t0p",
+      "Haircuts/mens haircuts/jwqesb4bstluibjx2hd0",
+      "Haircuts/mens haircuts/b9jn44auh080vnm7uzjt"
+    ],
+    "profile_image": "barbers/mens barbers/vqbi4uzvqesouncvtjpn"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Crew Cuts",
+      "Pompadours",
+      "Twists"
+    ],
+    "rating": 3.7,
+    "gender": "Non-Binary",
+    "dorm": "Holden",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 28.0,
+    "example_images": [
+      "Haircuts/womens haircuts/qi89lwknekbrhb7ih7wf",
+      "Haircuts/womens haircuts/vwnzguso060vdnx4bctb",
+      "Haircuts/womens haircuts/qzhv96leubxyznsucjjr"
+    ],
+    "profile_image": "barbers/women barbers/srro4uzgngfhvvjvg7nq"
+  },
+  {
+    "name": "Skyler Green",
+    "hairstyles": [
+      "Afros",
+      "Bobs",
+      "Buzz Cuts"
+    ],
+    "rating": 3.8,
+    "gender": "Female",
+    "dorm": "Wonders",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 28.25,
+    "example_images": [
+      "Haircuts/womens haircuts/vwnzguso060vdnx4bctb",
+      "Haircuts/womens haircuts/vgk50cgsbjhirc5z10vb",
+      "Haircuts/womens haircuts/ity3flmgbu6lvezhhi2b"
+    ],
+    "profile_image": "barbers/women barbers/cnc8uzhvaxwlkxokxc9k"
+  },
+  {
+    "name": "Morgan Yu",
+    "hairstyles": [
+      "Shaggy",
+      "Braids",
+      "Afros"
+    ],
+    "rating": 3.5,
+    "gender": "Female",
+    "dorm": "Wonders",
+    "neighborhood": "South",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 28.5,
+    "example_images": [
+      "Haircuts/womens haircuts/kbpbmeiesud5quaauein",
+      "Haircuts/womens haircuts/e8ud8kqjbaf3be0wkrla",
+      "Haircuts/womens haircuts/ity3flmgbu6lvezhhi2b",
+      "Haircuts/womens haircuts/ebvsx3zttbmbdaddmvn8",
+      "Haircuts/womens haircuts/ocabpr8zkmk121vf7ldc"
+    ],
+    "profile_image": "barbers/women barbers/butacpuxioz1xc2p9phq"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Crew Cuts",
+      "Bobs",
+      "Undercuts"
+    ],
+    "rating": 4.8,
+    "gender": "Female",
+    "dorm": "Holmes",
+    "neighborhood": "East",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 28.75,
+    "example_images": [
+      "Haircuts/womens haircuts/k1kefrh7gtp6hbtqvcyp",
+      "Haircuts/womens haircuts/avus09pr1ufbtca08b1r",
+      "Haircuts/womens haircuts/e0baaahhyvo1pliwtp0f",
+      "Haircuts/womens haircuts/jqt5exrakupv6e22nrt3"
+    ],
+    "profile_image": "barbers/women barbers/xhtn32h4piuplrksyz8f"
+  },
+  {
+    "name": "Skyler Green",
+    "hairstyles": [
+      "Pompadours",
+      "Afros",
+      "Shaggy"
+    ],
+    "rating": 4.5,
+    "gender": "Female",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Creative with color and texture.",
+    "cost": 29.0,
+    "example_images": [
+      "Haircuts/womens haircuts/oqic7vocbivbeo2zaonr",
+      "Haircuts/womens haircuts/kfpzlizweroocwmn9sle",
+      "Haircuts/womens haircuts/xfekq1eb2jtzkgnlizma"
+    ],
+    "profile_image": "barbers/women barbers/j2elpmj1oivmocj0jaxq"
+  },
+  {
+    "name": "Alex Rivera",
+    "hairstyles": [
+      "Crew Cuts",
+      "Undercuts",
+      "Buzz Cuts"
+    ],
+    "rating": 4.1,
+    "gender": "male",
+    "dorm": "Snyder-Phillips",
+    "neighborhood": "North",
+    "will-travel": false,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 29.25,
+    "example_images": [
+      "Haircuts/mens haircuts/sae52r7zd3u9afz2ez6f",
+      "Haircuts/mens haircuts/m4wpsj2ol46nrugv2dor",
+      "Haircuts/mens haircuts/bzaqpa2hqkepchvwznn0",
+      "Haircuts/mens haircuts/ymvnpedzd1fneav6o155",
+      "Haircuts/mens haircuts/jf836ijuzeuma1sfmwky"
+    ],
+    "profile_image": "barbers/mens barbers/tjopkxxj6fx9ls3zpngl"
+  },
+  {
+    "name": "Alex Rivera",
+    "hairstyles": [
+      "Shaggy",
+      "Undercuts",
+      "Pompadours"
+    ],
+    "rating": 4.1,
+    "gender": "Male",
+    "dorm": "McDonel",
+    "neighborhood": "River Trail",
+    "will-travel": false,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 29.5,
+    "example_images": [
+      "Haircuts/mens haircuts/bas8obk9wtr5pkp7vhvn",
+      "Haircuts/mens haircuts/k8bz9phr9br0ytbjgtlf",
+      "Haircuts/mens haircuts/xkssbzo7od11iyuwnpxx",
+      "Haircuts/mens haircuts/s7famdajthiyinqcjv8s",
+      "Haircuts/mens haircuts/mleeb4gwye3fqki7pq9d"
+    ],
+    "profile_image": "barbers/mens barbers/lui1zmcfegnpqqyjvs1b"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Braids",
+      "Crew Cuts",
+      "Afros"
+    ],
+    "rating": 4.1,
+    "gender": "Female",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Passionate about classic and modern styles.",
+    "cost": 29.75,
+    "example_images": [
+      "Haircuts/womens haircuts/cfo6zqtjsuzjqeptggso",
+      "Haircuts/womens haircuts/oqic7vocbivbeo2zaonr",
+      "Haircuts/womens haircuts/dombbclzitbm2nlz4u8y",
+      "Haircuts/womens haircuts/qi89lwknekbrhb7ih7wf",
+      "Haircuts/womens haircuts/bsvstupc1lmjujywidug"
+    ],
+    "profile_image": "barbers/women barbers/acro4hwtzqu35blcehac"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Undercuts",
+      "Crew Cuts",
+      "Bobs"
+    ],
+    "rating": 5.0,
+    "gender": "Female",
+    "dorm": "Bailey",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 30.0,
+    "example_images": [
+      "Haircuts/womens haircuts/vgk50cgsbjhirc5z10vb",
+      "Haircuts/womens haircuts/sul7q8zbpgd10vguflo7",
+      "Haircuts/womens haircuts/ity3flmgbu6lvezhhi2b"
+    ],
+    "profile_image": "barbers/women barbers/avzmmat4z2uhlvu8xdfy"
+  },
+  {
+    "name": "Morgan Yu",
+    "hairstyles": [
+      "Buzz Cuts",
+      "Shaggy",
+      "Undercuts"
+    ],
+    "rating": 4.3,
+    "gender": "Male",
+    "dorm": "Butterfield",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Love creating personalized looks for everyone.",
+    "cost": 30.25,
+    "example_images": [
+      "Haircuts/mens haircuts/o15vud27smjajv42aqfq",
+      "Haircuts/mens haircuts/aie6tleeverdadeozv3n",
+      "Haircuts/mens haircuts/b9pcuqfzwi6to85iwju8"
+    ],
+    "profile_image": "barbers/mens barbers/lgjrrlhrbkd9wfdz0xds"
+  },
+  {
+    "name": "Drew Garcia",
+    "hairstyles": [
+      "Twists",
+      "Buzz Cuts",
+      "Fades"
+    ],
+    "rating": 4.9,
+    "gender": "male",
+    "dorm": "Wonders",
+    "neighborhood": "South",
+    "will-travel": false,
+    "biography": "Creative with color and texture.",
+    "cost": 30.5,
+    "example_images": [
+      "Haircuts/mens haircuts/bzaqpa2hqkepchvwznn0",
+      "Haircuts/mens haircuts/cwtjxe7bax7pvjkltjsx",
+      "Haircuts/mens haircuts/uldjd6ihcvneyf7zld74"
+    ],
+    "profile_image": "barbers/mens barbers/uz42sl6tjrkzjaxh1sv0"
+  },
+  {
+    "name": "Alex Rivera",
+    "hairstyles": [
+      "Braids",
+      "Twists",
+      "Fades"
+    ],
+    "rating": 4.5,
+    "gender": "Male",
+    "dorm": "Bryan",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Focused on comfort and great conversation.",
+    "cost": 30.75,
+    "example_images": [
+      "Haircuts/mens haircuts/zqsftnogf0dy8nrgpo8d",
+      "Haircuts/mens haircuts/tgpvx6vwvsin00vyj9os",
+      "Haircuts/mens haircuts/cvqcffzpogcoermrf975",
+      "Haircuts/mens haircuts/tkisadt8mbktuk8fgpkj"
+    ],
+    "profile_image": "barbers/mens barbers/namsqczptwqjab30de5n"
+  },
+  {
+    "name": "Skyler Green",
+    "hairstyles": [
+      "Undercuts",
+      "Bobs",
+      "Shaggy"
+    ],
+    "rating": 4.4,
+    "gender": "Female",
+    "dorm": "Butterfield",
+    "neighborhood": "Brody",
+    "will-travel": false,
+    "biography": "Creative with color and texture.",
+    "cost": 31.0,
+    "example_images": [
+      "Haircuts/womens haircuts/reqgwexcjp94epljkq4l",
+      "Haircuts/womens haircuts/bsvstupc1lmjujywidug"
+    ],
+    "profile_image": "barbers/women barbers/mdyv50pu6bhrj5legtjs"
+  },
+  {
+    "name": "Jamie Patel",
+    "hairstyles": [
+      "Fades",
+      "Undercuts",
+      "Twists"
+    ],
+    "rating": 4.5,
+    "gender": "Male",
+    "dorm": "Emmons",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 31.25,
+    "example_images": [
+      "Haircuts/mens haircuts/cwtjxe7bax7pvjkltjsx",
+      "Haircuts/mens haircuts/ymvnpedzd1fneav6o155",
+      "Haircuts/mens haircuts/s8gr2ksl7lqmmqvr6j6a",
+      "Haircuts/mens haircuts/fezj0hxmyuqkwymqu5lx"
+    ],
+    "profile_image": "barbers/mens barbers/gdpq4bl6tv4mlsd7btgc"
+  },
+  {
+    "name": "Morgan Yu",
+    "hairstyles": [
+      "Crew Cuts",
+      "Pompadours",
+      "Afros"
+    ],
+    "rating": 3.9,
+    "gender": "male",
+    "dorm": "Snyder-Phillips",
+    "neighborhood": "North",
+    "will-travel": false,
+    "biography": "Barbering with a touch of style.",
+    "cost": 31.5,
+    "example_images": [
+      "Haircuts/mens haircuts/jwqesb4bstluibjx2hd0",
+      "Haircuts/mens haircuts/tbtmu8axxrqrrth2isup",
+      "Haircuts/mens haircuts/ty8fr8aazkvxvatoivsi",
+      "Haircuts/mens haircuts/fsdp23jsk2qpe4kpbqiu",
+      "Haircuts/mens haircuts/o15vud27smjajv42aqfq"
+    ],
+    "profile_image": "barbers/mens barbers/isjnjwzwhdyveappgidc"
+  },
+  {
+    "name": "Jordan Lee",
+    "hairstyles": [
+      "Buzz Cuts",
+      "Crew Cuts",
+      "Braids"
+    ],
+    "rating": 4.3,
+    "gender": "Male",
+    "dorm": "Butterfield",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Detail-oriented and always on trend.",
+    "cost": 31.75,
+    "example_images": [
+      "Haircuts/mens haircuts/s7famdajthiyinqcjv8s",
+      "Haircuts/mens haircuts/wpzolcrtkvukebs5jtvx",
+      "Haircuts/mens haircuts/b9jn44auh080vnm7uzjt"
+    ],
+    "profile_image": "barbers/mens barbers/ehdrqkwg329wn3wfqfhp"
+  },
+  {
+    "name": "Morgan Yu",
+    "hairstyles": [
+      "Bobs",
+      "Crew Cuts",
+      "Undercuts"
+    ],
+    "rating": 4.4,
+    "gender": "Non-Binary",
+    "dorm": "Akers",
+    "neighborhood": "East",
+    "will-travel": true,
+    "biography": "Love creating personalized looks for everyone.",
+    "cost": 32.0,
+    "example_images": [
+      "Haircuts/womens haircuts/wngqnm4xzuulrsku1u4p",
+      "Haircuts/womens haircuts/nguqbkj4fwjpvfvljkhk",
+      "Haircuts/mens haircuts/k8bz9phr9br0ytbjgtlf",
+      "Haircuts/mens haircuts/d7loqji0vcofx2f1edlb"
+    ],
+    "profile_image": "barbers/women barbers/rsvvdx7fmhzjasapuplt"
+  },
+  {
+    "name": "Riley Chen",
+    "hairstyles": [
+      "Afros",
+      "Undercuts",
+      "Fades"
+    ],
+    "rating": 4.9,
+    "gender": "male",
+    "dorm": "Snyder-Phillips",
+    "neighborhood": "North",
+    "will-travel": true,
+    "biography": "Specialize in fades and sharp lines.",
+    "cost": 32.25,
+    "example_images": [
+      "Haircuts/mens haircuts/sae52r7zd3u9afz2ez6f",
+      "Haircuts/mens haircuts/ni3lp5z4eiuswjbed9fq",
+      "Haircuts/mens haircuts/bas8obk9wtr5pkp7vhvn"
+    ],
+    "profile_image": "barbers/mens barbers/cktay6fbwpvtnqszm4aq"
+  },
+  {
+    "name": "Taylor Kim",
+    "hairstyles": [
+      "Twists",
+      "Fades",
+      "Buzz Cuts"
+    ],
+    "rating": 4.6,
+    "gender": "Female",
+    "dorm": "Butterfield",
+    "neighborhood": "Brody",
+    "will-travel": true,
+    "biography": "Known for precision and creativity.",
+    "cost": 32.5,
+    "example_images": [
+      "Haircuts/womens haircuts/pbqrfmw4vt6owtfoiurl",
+      "Haircuts/womens haircuts/bifo1d6x1kgco7vfkhkr"
+    ],
+    "profile_image": "barbers/women barbers/sjuga7wncnggf71oost7"
+  }
+]

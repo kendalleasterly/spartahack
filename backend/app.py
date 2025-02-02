@@ -6,6 +6,7 @@ from pymongo import MongoClient
 from flask_cors import CORS
 import os
 from dotenv import load_dotenv
+from vector_search import vector_search_uploaded_image
 
 load_dotenv()
 # Initialize Flask with __name__
@@ -201,7 +202,16 @@ def image_search():
 
         print(f"File saved to: {file_path}")
 
-        return jsonify({"message": "Image uploaded and saved successfully"}), 200
+        # Perform vector search on the uploaded image.
+        # This uses the function from vector_search.py to generate a vector embedding
+        # and query MongoDB to return the top k similar image documents.
+        similar_docs = vector_search_uploaded_image(file_path, k=2, db_name="your_database", collection_name="haircut-embeddings")
+        similar_ids = [doc.get("public_id") for doc in similar_docs]
+
+        # Query the barbers collection for barbers whose "example_images" array contains any of these similar image IDs.
+        barber_results = list(collection.find({"example_images": {"$in": similar_ids}}, {"_id": 1}))
+        similar_barber_ids = [str(doc["_id"]) for doc in barber_results]
+        return jsonify({"similar_barbers": similar_barber_ids}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
