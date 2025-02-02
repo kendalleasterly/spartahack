@@ -9,8 +9,8 @@ import { useEffect } from "react"
 import { useParams } from "next/navigation"
 import { useState } from "react"
 import axios from "axios"
-import Barber from "@/lib/schemas"
-import {getBarberStyles} from "../utils"
+import { Barber } from "@/lib/schemas"
+import {getBarberStyles} from "@/app/utils"
 
 // This would come from your database
 const barberPlaceholder = {
@@ -64,7 +64,7 @@ export default function BarberProfile() {
 			<div className="bg-emerald-900">
 				<div className="mb-6 p-4 md:p-6 mx-auto max-w-2xl">
 					<Link
-						href="/barbers"
+						href="/"
 						className="text-gray-200 hover:text-gray-200 transition-colors mb-4 inline-block"
 					>
 						← Back
@@ -172,7 +172,7 @@ export default function BarberProfile() {
 				</div>
 
 				{/* Book Button */}
-				<Link href={`/barbers/${id}/book`}>
+				<Link href={`/${id}/book`}>
 					<Button className="w-full py-6 text-lg bg-primary hover:bg-primary-600 text-primary-foreground">
 						Book Appointment
 					</Button>

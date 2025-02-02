@@ -10,7 +10,10 @@ from dotenv import load_dotenv
 load_dotenv()
 # Initialize Flask with __name__
 app = Flask(__name__)
-CORS(app, supports_credentials=True)
+CORS(app, supports_credentials=True, resources={r"/*": {
+    "origins": "http://localhost:3000",
+    "allow_headers": "*"
+}})
 
 # MongoDB connection setup
 MONGO_URI = os.getenv("MONGO_URI")
@@ -94,7 +97,7 @@ def create_session():
 
         barber_data = {
             "name": barber.get("name"),
-            "photo": barber.get("photo"),
+            "profile_image": barber.get("profile_image"),
             "_id": str(barber.get("_id"))
         }
 
@@ -102,7 +105,7 @@ def create_session():
             "barber_id": str(barber_id),
             "user_id": user_id,
             "barber_name": barber_data["name"],
-            "barber_photo": barber_data["photo"],
+            "profile_image": barber_data["profile_image"],
             "created_time": int(time.time()),
             "appointment_time": appointment_time,
             "duration": duration,
@@ -178,11 +181,14 @@ def get_barber_sessions():
 def add_cors_headers(response):
     """
     Add CORS headers to the response to allow requests from the origin of the request.
+    This also includes necessary headers for preflight (OPTIONS) responses.
     """
     origin = request.headers.get('Origin')
     if origin:
         response.headers['Access-Control-Allow-Origin'] = origin
         response.headers['Access-Control-Allow-Credentials'] = 'true'
+        response.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization, X-Requested-With'
+        response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS, PUT, DELETE'
     return response
 
 if __name__ == "__main__":

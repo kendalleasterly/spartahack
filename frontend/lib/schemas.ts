@@ -13,4 +13,12 @@ interface Barber {
     _id: string;
   }
 
-export default Barber;
+interface User {
+	user_id: string;
+	user_name: string;
+	_id: string;
+	dorm: string;
+}
+
+
+export type { Barber, User };
