@@ -1,25 +1,35 @@
-import cloudinary
+from datetime import datetime
+import time
 from bson.objectid import ObjectId
-from flask import Flask, redirect, url_for, request, render_template, jsonify
+from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from flask_cors import CORS
 
-app = Flask("Spartancutz")
+# Initialize Flask with __name__
+app = Flask(__name__)
 CORS(app)
 
 # MongoDB connection setup
 client = MongoClient("mongodb+srv://gautham:nVXsNYur5nPIzpP1@main.1kg3i.mongodb.net/")
 db = client["barber-database"]
-collection = db["barber"]
+collection = db["barbers"]
+sessions_collection = db["sessions"]
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+# Verify MongoDB connection
+try:
+    client.admin.command('ping')
+    print("MongoDB connection successful!")
+except Exception as e:
+    print(f"MongoDB connection failed: {e}")
+    exit(1)
+
+@app.route("/test", methods=["GET"])
+def test():
+    return "Server is running!"
 
 @app.route("/get_barber", methods=["GET"])
 def get_barber():
     try:
-        # Extract query parameters from the URL
         barber_id = request.args.get("_id")
         barber_name = request.args.get("name")
         location = request.args.get("location")
@@ -31,28 +41,28 @@ def get_barber():
 
         query = {}
 
-        # Build the query based on the provided parameters
         if barber_id:
             query["_id"] = ObjectId(barber_id)
         if barber_name:
-            query["Name"] = barber_name
+            query["name"] = barber_name
         if location:
-            query["Neighborhood"] = location
+            query["neighborhood"] = location
         if hairstyle:
-            query["Hairstyles"] = {"$in": [hairstyle]}
+            query["hairstyles"] = {
+                "$regex": f".*{hairstyle}.*",
+                "$options": "i"
+            }
         if rating:
-            query["Rating"] = float(rating)
+            query["rating"] = {"$gte": float(rating)}
         if gender:
-            query["Gender"] = gender
+            query["gender"] = gender
         if will_travel:
-            query["Will-Travel"] = will_travel.lower() == 'true'
+            query["will-travel"] = will_travel
         if cost:
-            query["Cost"] = int(cost)
+            query["cost"] = {"$lte": float(cost)}
 
-        # Fetch the data from MongoDB
         barber_data = list(collection.find(query))
 
-        # Convert ObjectId to string for JSON serialization
         for item in barber_data:
             item["_id"] = str(item["_id"])
 
@@ -65,33 +75,103 @@ def get_barber():
 def create_session():
     try:
         data = request.get_json()
-        barber_id = data.get('barber_id')
         
-        # Find barber in the barber collection
+        barber_id = data['barber_id']
+        user_id = data['user_id']
+        appointment_time = int(data['time'])
+        duration = int(data['duration'])
+        amount_paid = float(data['amount_paid'])
+        meeting_location = data['meeting_location']
+        
         barber = collection.find_one({"_id": ObjectId(barber_id)})
         
         if not barber:
             return jsonify({"error": "Barber not found"}), 404
 
-        # Create session document
-        session_data = {
-            "barber_id": barber_id,
-            "barber_name": barber.get("Name"),
-            "barber_photo": barber.get("Photo"),
+        barber_data = {
+            "name": barber.get("name"),
+            "photo": barber.get("photo"),
+            "_id": str(barber.get("_id"))
         }
 
-        # Insert into sessions collection
-        sessions_collection = db["sessions"]
+        session_data = {
+            "barber_id": str(barber_id),
+            "user_id": user_id,
+            "barber_name": barber_data["name"],
+            "barber_photo": barber_data["photo"],
+            "created_time": int(time.time()),
+            "appointment_time": appointment_time,
+            "duration": duration,
+            "amount_paid": amount_paid,
+            "meeting_location": meeting_location
+        }
+
         result = sessions_collection.insert_one(session_data)
+        
+        response_data = {
+            "session_id": str(result.inserted_id),
+            "message": "Session created successfully",
+            "session_details": {
+                **session_data,
+                "_id": str(result.inserted_id)
+            }
+        }
+
+        return jsonify(response_data)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/get_user_sessions", methods=["GET"])
+def get_user_sessions():
+    try:
+        user_id = request.args.get("user_id")
+        
+        if not user_id:
+            return jsonify({"error": "User ID is required"}), 400
+
+        # Find all sessions for this user
+        sessions = list(sessions_collection.find({"user_id": user_id}))
+
+        # Convert ObjectIds to strings
+        for session in sessions:
+            session["_id"] = str(session["_id"])
 
         return jsonify({
-            "session_id": str(result.inserted_id),
-            "message": "Session created successfully"
+            "user_id": user_id,
+            "session_count": len(sessions),
+            "sessions": sessions
         })
 
     except Exception as e:
-        print(f"Error in create_session: {str(e)}")  # Debug print
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/get_barber_sessions", methods=["GET"])
+def get_barber_sessions():
+    try:
+        barber_id = request.args.get("barber_id")
+        
+        if not barber_id:
+            return jsonify({"error": "Barber ID is required"}), 400
+
+        # Find all sessions for this barber
+        sessions = list(sessions_collection.find({"barber_id": barber_id}))
+
+        # Convert ObjectIds to strings
+        for session in sessions:
+            session["_id"] = str(session["_id"])
+
+        return jsonify({
+            "barber_id": barber_id,
+            "session_count": len(sessions),
+            "sessions": sessions
+        })
+
+    except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    print("Starting server...")
+    app.run(debug=True, port=5000)
+
+
