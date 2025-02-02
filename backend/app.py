@@ -177,6 +177,34 @@ def get_barber_sessions():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/image_search", methods=["POST"])
+def image_search():
+    try:
+        # Check if the 'file' key exists in the request files
+        if 'file' not in request.files:
+            return jsonify({"error": "No file part in the request"}), 400
+        
+        # Get the file from the request
+        file = request.files['file']
+
+        # Ensure a file is selected
+        if file.filename == "":
+            return jsonify({"error": "No selected file"}), 400
+
+        # Define the directory to save the uploaded files
+        upload_folder = "uploads"
+        os.makedirs(upload_folder, exist_ok=True)  # Create the directory if it doesn't exist
+
+        # Save the file to the specified directory
+        file_path = os.path.join(upload_folder, file.filename)
+        file.save(file_path)
+
+        print(f"File saved to: {file_path}")
+
+        return jsonify({"message": "Image uploaded and saved successfully"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.after_request
 def add_cors_headers(response):
     """

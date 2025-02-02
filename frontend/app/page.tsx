@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import axios from "axios"
-import { Search, Star, MapPin, Upload } from "lucide-react"
+import { Search, Star, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -25,6 +25,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { CldImage } from "next-cloudinary"
 import {Barber} from "@/lib/schemas"
 import {getBarberStyles, formatBarberName} from "@/app/utils"
+import { UploadModal } from "@/components/upload-modal"
 
 export default function BarbersPage() {
 	const [searchQuery, setSearchQuery] = useState("")
@@ -94,7 +95,7 @@ export default function BarbersPage() {
 							size="icon"
 							className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 bg-emerald-50"
 						>
-							<Upload className="w-3 h-3" />
+							<UploadModal />
 						</Button>
 					</div>
 				</div>
@@ -229,7 +230,9 @@ export default function BarbersPage() {
 										${barber.cost}
 										<span className="text-sm text-muted-foreground">/Cut</span>
 									</span>
-									<Button size="sm" className="bg-emerald-50 text-black-600">Book</Button>
+									<Link href={`/${barber._id}/book`}>
+										<Button size="sm" className="bg-emerald-50 text-black-600">Book</Button>
+									</Link>
 								</div>
 							</div>
 						</Link>

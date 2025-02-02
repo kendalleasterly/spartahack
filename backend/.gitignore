@@ -1,3 +1,4 @@
 .venv
 assign_images_to_barbers.py
 .env
+create_image_embeddings.py

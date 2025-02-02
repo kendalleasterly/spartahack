@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import axios from "axios"
 
 export function UploadModal() {
   const [file, setFile] = useState<File | null>(null)
@@ -31,12 +32,13 @@ export function UploadModal() {
 
     try {
       // Replace with your actual API endpoint
-      const response = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      })
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/image_search`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
 
-      if (response.ok) {
+      if (response.status === 200) {
         console.log("File uploaded successfully")
         // Handle successful upload (e.g., show a success message, close modal)
       } else {
